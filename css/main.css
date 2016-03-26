@@ -2,3 +2,9 @@ footer {
 	color: #bd0bbd;
 	background-color: #eee;
 }
+a {
+	text-decoration: none;
+}
+ul li {
+	list-style: none;
+}
