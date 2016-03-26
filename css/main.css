@@ -8,3 +8,27 @@ a {
 ul li {
 	list-style: none;
 }
+#wrapper {
+	max-width: 940px;
+	margin: 0 auto;
+	padding: 0 5%;
+}
+
+#logo {
+	text-align: center;
+	margin: 0;
+	color: #59323C;
+}
+
+body {
+	background-color: #F2EEB3;
+}
+
+header {
+	background: #BFAF80;
+	border-color: #8C6954;
+}
+
+nav a.selected, nav a:hover {
+	color: #260126;
+}
