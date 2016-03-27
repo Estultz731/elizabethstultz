@@ -1,7 +1,8 @@
-footer {
-	color: #bd0bbd;
-	background-color: #eee;
-}
+/*********************
+GENERAL
+**********************/
+
+
 a {
 	text-decoration: none;
 }
@@ -14,21 +15,117 @@ ul li {
 	padding: 0 5%;
 }
 
+body {
+	font-family: 'Poiret One', sans-serif;
+}
+
+/* links */
+a {
+	color: #59323C;
+}
+
+/* site body */
+body {
+	background-color: #F2EEB3;
+}
+
+img {
+	max-width: 100%;
+}
+
+
+
+/*********************
+HEADING
+**********************/
+
+
 #logo {
 	text-align: center;
 	margin: 0;
 	color: #59323C;
 }
 
-body {
-	background-color: #F2EEB3;
+h1 {
+	font-family: 'Poiret One', sans-serif;
+	margin: 15px 0;
+	font-size: 1.75em;
+	font-weight: normal;
+	line-height: 0.8em;
 }
 
+
+/*********************
+NAVIGATION
+**********************/
+
+nav {
+	text-align: center;
+	padding: 10px 0;
+	margin: 20px 0 0;
+}
+
+/*********************
+FOOTER
+**********************/
+
+footer {
+	font-size: 0.75em;
+	text-align: center;
+	clear: both;
+	padding-top: 50px;
+	color: #bd0bbd;
+	background-color: #eee;
+}
+
+
+/*********************
+PAGE PORTFOLIO
+**********************/
+
+#gallery {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#gallery li {
+	float: left;
+	width: 45%;
+	margin: 2.5%;
+	background-color: #F2EEB3;
+	color: #260126;
+}
+
+#gallery li a p {
+	margin: 0;
+	padding: 5%;
+	font-size: 0.75em;
+	color: #260126;
+}
+/*********************
+COLORS
+**********************/
+
+
+/* beige header */
 header {
 	background: #BFAF80;
 	border-color: #8C6954;
 }
 
+/* nav background on mobile */
+nav {
+	background: #BFAF80;
+}
+
+/* color for a nav link */
+nav a, nav a:visited{
+	color: ffffff;
+}
+
+/* selected nav link */
 nav a.selected, nav a:hover {
 	color: #260126;
 }
+
