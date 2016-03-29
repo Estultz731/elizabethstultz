@@ -68,7 +68,7 @@ h1 {
 h3 {
 	font-family: 'Poiret One', sans-serif;
 	font-size: 1em;
-	
+
 }
 	
 
@@ -96,6 +96,8 @@ nav a {
 	font-weight: bold;
 	padding: 15px 10px;
 }
+
+
 /*********************
 FOOTER
 **********************/
@@ -150,7 +152,7 @@ PAGE: ABOUT;
 .profile-picture {
 	display: block;
 	max-width: 150px;
-	margin: 0 auto 50px;
+	margin: 0 auto 30px;
 	border-radius: 100%;
 	float: left;
 }
@@ -192,14 +194,13 @@ nav {
 	background: #BFAF80;
 }
 
-/* color for a nav link */
-nav a, nav a:visited{
-	color: ffffff;
+/* selected nav link */
+nav a.selected {
+	color: #fff;
 }
 
-/* selected nav link */
-nav a.selected, nav a:hover {
-	color: #260126;
+nav a:hover {
+	color: #8c6954;
 }
 
 
