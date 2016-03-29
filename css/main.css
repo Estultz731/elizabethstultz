@@ -37,6 +37,9 @@ h2 {
 	margin: 0 0 1em, 0;
 }
 
+ul {
+	padding: 0;
+}
 /*********************
 HEADING
 **********************/
@@ -65,6 +68,7 @@ h1 {
 h3 {
 	font-family: 'Poiret One', sans-serif;
 	font-size: 1em;
+	
 }
 	
 
@@ -139,7 +143,6 @@ PAGE PORTFOLIO
 }
 
 
-
 /*********************
 PAGE: ABOUT;
 **********************/
@@ -147,11 +150,32 @@ PAGE: ABOUT;
 .profile-picture {
 	display: block;
 	max-width: 150px;
-	margin: 0 auto 30px;
+	margin: 0 auto 50px;
 	border-radius: 100%;
+	float: left;
 }
 
+/*********************
+PAGE: CONTACT
+**********************/
 
+.contact-info {
+	margin: 0;
+	font-size: 0.9em;
+}
+
+.contact-info li.e-mail a {
+	background-image: url(https://dummyimage.com/20X20/bd0bbd/fff.jpg);
+}
+
+.contact-info a {
+	display: block;
+	min-height: 20px;
+	background-repeat: no-repeat;
+	background-size: 20px 20px;
+	padding: 0 0 0 30px;
+	margin: 0 0 10px;
+}
 /*********************
 COLORS
 **********************/
@@ -177,4 +201,5 @@ nav a, nav a:visited{
 nav a.selected, nav a:hover {
 	color: #260126;
 }
+
 
