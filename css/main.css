@@ -6,6 +6,10 @@ GENERAL
 a {
 	text-decoration: none;
 }
+
+p {
+	margin:0;
+}
 ul li {
 	list-style: none;
 }
@@ -13,10 +17,11 @@ ul li {
 	max-width: 940px;
 	margin: 0 auto;
 	padding: 0 5%;
+	height: 100vh;
 }
 
 body {
-	font-family: 'Poiret One', sans-serif;
+	font-family: 'Poiret One', Helvetica, Arial, sans-serif;
 }
 
 /* links */
@@ -34,7 +39,7 @@ img {
 }
 
 h2 {
-	margin: 0 0 1em, 0;
+	margin: 0 0 1em 0;
 }
 
 ul {
@@ -68,6 +73,7 @@ h1 {
 h3 {
 	font-family: 'Poiret One', sans-serif;
 	font-size: 1em;
+	margin:0;
 
 }
 	
@@ -108,7 +114,11 @@ footer {
 	clear: both;
 	padding-top: 50px;
 	color: #bd0bbd;
-	background-color: #eee;
+	background-color: #d2a679;
+	position: relative;
+	bottom: 0;
+	
+
 }
 
 .social-icon {
@@ -140,8 +150,8 @@ PAGE PORTFOLIO
 #gallery li a p {
 	margin: 0;
 	padding: 5%;
-	font-size: 0.75em;
-	color: #260126;
+	font-size: 1.25em;
+	color: #000;
 }
 
 
