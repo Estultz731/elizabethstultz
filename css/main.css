@@ -31,7 +31,7 @@ a {
 
 /* site body */
 body {
-	background-color: #F2EEB3;
+	background-color: #f2eeb3;
 }
 
 img {
@@ -117,7 +117,6 @@ footer {
 	background-color: #d2a679;
 	position: relative;
 	bottom: 0;
-	
 
 }
 
@@ -143,7 +142,6 @@ PAGE PORTFOLIO
 	float: left;
 	width: 45%;
 	margin: 2.5%;
-	background-color: #F2EEB3;
 	color: #260126;
 }
 
@@ -152,9 +150,17 @@ PAGE PORTFOLIO
 	padding: 5%;
 	font-size: 1.25em;
 	color: #000;
+	font-weight: bold;
 }
 
+#gallery li a img.gallery-image {
+	border-radius: 100%;
+	transition: all linear .5s;
+}
 
+#gallery li a img.gallery-image:hover {
+	    transform: scale(1.2) rotate(360deg);
+}
 /*********************
 PAGE: ABOUT;
 **********************/
