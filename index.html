@@ -5,58 +5,69 @@
         <title>Elizabeth Stultz | Web Developer</title>
         <link rel="stylesheet" type="text/css" href="css/normalize.css">
         <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="css/main.css">
-        <link rel="stylesheet" type="text/css" href="css/responsive.css"
-        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/smalltablet.css">
+        <link rel="stylesheet" type="text/css" href="css/tablet.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <header>
-            <a href="index.html" id="logo">
+        
+        <nav>
+            <div id="nav-toggle">
+                <i class="fa fa-bars"></i>
+            </div>
+
+            <div class="header">
                 <h1>Elizabeth Stultz</h1>
+            </div>
 
-            <h3>Web Developer</h3>
-            </a>
+            <div class="nav-links">
+                <a href="/">Home</a>
+                <a href="/about.html">About Me</a>
+                <a href="/contact.html">Contact</a>
+            </div>
 
+            <div class="right-hidden"></div>
 
-            <nav>
-                <ul>
-                    <li><a href="index.html" class="selected">Home</a></li>
-                    <li><a href="about.html">About Me</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
+        </nav>
         <div id="wrapper">
-            <section>
-                <ul id="gallery">
-                    <li>
-                        <a href="">
-                          <img src="http://dummyimage.com/300X300/bd0bbd/fff.jpg" alt="" class="gallery-image"> 
-
-                            <p>Too Dumb, Didn't Read</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                          <img src="http://dummyimage.com/300X300/0bd61c/fff.jpg" alt="" class="gallery-image">  
-                          <p>Lizzy's Short Horror Fiction</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                          <img src="http://dummyimage.com/300X300/ff5cd1/fff.jpg" alt="" class="gallery-image">  
-                          <p>Restaurant Reviews</p>
-                        </a>
-                    </li>
-                </ul>
-            </section> 
+      
+            <section id="gallery">
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <a href=""><img src="http://dummyimage.com/300X300/bd0bbd/fff.jpg"></a>
+                    </div>
+                    <div class="gallery-text">
+                        <a>Too Dumb, Didn't Read</a>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <a href=""><img src="http://dummyimage.com/300X300/0bd61c/fff.jpg"></a>
+                    </div>
+                    <div class="gallery-text">
+                        <a>Lizzy's Short Horror Fiction</a>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <a href=""><img src="http://dummyimage.com/300X300/ff5cd1/fff.jpg"></a>
+                    </div>
+                    <div class="gallery-text">
+                        <a>Restaurant Reviews</a>
+                    </div>
+                </div>
+            </section>
         </div>
         <footer>
             <a href=""><img src="http://dummyimage.com/20X20/bd0bbd/fff.jpg" alt="Github" class="social-icon"></a>
             <a href=""><img src="http://dummyimage.com/20X20/bd0bbd/fff.jpg" alt="LinkedIn" class="social-icon"></a>
             <a href=""><img src="http://dummyimage.com/20X20/bd0bbd/fff.jpg" alt="Treehouse" class="social-icon"></a>
-            <p>&copy; 2016 Elizabeth Stultz.</p>
+            <p class="copyright">&copy; 2016 Elizabeth Stultz.</p>
         </footer>
+        
+        <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
         <script src="js/main.js"></script>
     </body>
 </html>

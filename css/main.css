@@ -1,7 +1,9 @@
 /*********************
 GENERAL
 **********************/
-
+ul {
+	margin:0;
+}
 
 a {
 	text-decoration: none;
@@ -14,10 +16,10 @@ ul li {
 	list-style: none;
 }
 #wrapper {
-	max-width: 940px;
+	max-width: 90%;
 	margin: 0 auto;
 	padding: 0 5%;
-	height: 100vh;
+	height: 100%;
 }
 
 body {
@@ -49,13 +51,6 @@ ul {
 HEADING
 **********************/
 
-header {
-	float: left;
-	margin: 0 0 30px 0;
-	padding: 5px 0 0 0;
-	width: 100%;
-	text-align: center;
-}
 
 #logo {
 	margin: 0;
@@ -83,47 +78,83 @@ NAVIGATION
 **********************/
 
 nav {
+	background: #BFAF80;
+    position: relative;
+    width: 100%;
+    margin-bottom: 1em;
+    top:0;
+   	border-bottom: 2px solid #8C6954;
+   	display: flex;
+   	align-items: center;
+   	justify-content: flex-start;
+   	height: 50px;
+}
+#nav-toggle {
+    width: 2em;
+    padding:.5em;
+}
+#nav-toggle i {
+	font-size: 1.5em;
+}
+#nav-toggle:hover {
+	cursor: pointer;
+}
+.right-hidden {
+	width:2em;
+	position: relative;
+	padding:.5em;
+}
+.header {
 	text-align: center;
-	padding: 10px 0;
-	margin: 20px 0 0;
+	align-self: center;
+	margin: 0 auto;
+}
+.show-flex {
+	display:flex;
+}
+.nav-links {
+	display:none;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    background: #bfaf80;
+    width: 100px;
+    padding-left: .25em;
+    border-bottom-right-radius: 50%;
 }
 
-nav ul {
-	list-style: none;
-	margin: 0 10px;
-	padding: 0;
+
+.nav-links a {
+    flex-basis: 100%;
+    font-size: 1.25em;
+    font-weight: bold;
+    padding-bottom: .25em;
 }
 
-nav li {
-	display: inline-block;
-}
-
-nav a {
-	font-weight: bold;
-	padding: 15px 10px;
-}
 
 
 /*********************
 FOOTER
 **********************/
 
-footer {
-	font-size: 0.75em;
-	text-align: center;
-	clear: both;
-	padding-top: 50px;
-	color: #bd0bbd;
-	background-color: #d2a679;
-	position: relative;
-	bottom: 0;
+    footer {
+	display: flex;
+	align-items: center;
+	justify-content:flex-start;
+}
 
+p.copyright {
+	margin: 0 0 0 auto;
 }
 
 .social-icon {
 	width: 30px;
 	height: 30px;
 	margin: 0 5px;
+
 }
 
 
@@ -136,30 +167,53 @@ PAGE PORTFOLIO
 	margin: 0;
 	padding: 0;
 	list-style: none;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-#gallery li {
-	float: left;
-	width: 45%;
-	margin: 2.5%;
+.gallery-item {
+	
 	color: #260126;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+}
+.gallery-image {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#gallery li a p {
+.gallery-text {
+    height: 30px;
+    margin-top: .5em;
+    z-index: 100;
+    text-align: center;
+}
+
+.gallery-text a {
 	margin: 0;
-	padding: 5%;
 	font-size: 1.25em;
 	color: #000;
 	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
 }
 
-#gallery li a img.gallery-image {
+.gallery-image img {
 	border-radius: 100%;
 	transition: all linear .5s;
 }
 
-#gallery li a img.gallery-image:hover {
-	    transform: scale(1.2) rotate(360deg);
+.gallery-image img:hover {
+	    transform: scale(1.1) rotate(360deg);
+	    box-shadow: 0px 0px 40px 0px #000;
+	    z-index:10;
 }
 /*********************
 PAGE: ABOUT;
@@ -199,16 +253,9 @@ COLORS
 **********************/
 
 
-/* beige header */
-header {
-	background: #BFAF80;
-	border-color: #8C6954;
-}
 
-/* nav background on mobile */
-nav {
-	background: #BFAF80;
-}
+
+
 
 /* selected nav link */
 nav a.selected {
